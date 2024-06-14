@@ -7,34 +7,34 @@
     <style>
         * {
             box-sizing: border-box;
-    }
+        }
         .row::after {
             content: "";
             clear: both;
             display: table;
-    }
-        .row{
+        }
+        .row {
             font-size: 20px;
         }
         [class*="col-"] {
             float: left;
             padding: 15px;
-    }
+        }
         html {
             font-family: "Lucida Sans", sans-serif;
-    }
+        }
         .header {
             background: linear-gradient(to top, #c5d5fa, #c3dc99);
-            color: 	#613030;
+            color: #613030;
             padding: 15px;
             text-align: center;
             font-size: 20px;
-    }
+        }
         .menu ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-    }
+        }
         .menu li {
             padding: 8px;
             margin-bottom: 7px;
@@ -42,42 +42,48 @@
             background-color: #4F9D9D;
             box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
             text-align: center;
-    }
+            cursor: pointer;
+        }
         .menu li:hover {
             background-color: #8600FF;
         }
-        .aa{
+        .aa {
             text-align: center;
         }
         /* For mobile phones: */
         [class*="col-"] {
             width: 100%;
-    }
+        }
         @media only screen and (min-width: 768px) {
-        /* For desktop: */
-        .col-1 {width: 8.33%;}
-        .col-2 {width: 16.66%;}
-        .col-3 {width: 25%;}
-        .col-4 {width: 33.33%;}
-        .col-5 {width: 41.66%;}
-        .col-6 {width: 50%;}
-        .col-7 {width: 58.33%;}
-        .col-8 {width: 66.66%;}
-        .col-9 {width: 75%;}
-        .col-10 {width: 83.33%;}
-        .col-11 {width: 91.66%;}
-        .col-12 {width: 100%;}
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
         }
         #sec01 {
-            background-color: antiquewhite
+            background-color: 	#FFE4CA;
         }
-
         #sec02 {
-            background-color: rgb(245, 255, 240)
+            background-color: rgb(245, 255, 240);
         }
-        img{
+        #sec3{
+            background-color: antiquewhite;
+        }
+        img {
             margin: auto;
             display: block;
+        }
+        .content-section {
+            display: none;
         }
     </style>
 </head>
@@ -87,38 +93,124 @@
     </div>
     <div class="row">
         <div class="col-3 menu">
-          <ul>
-            <br><br><li>東京迪士尼</li><br>
-            <li>巴黎迪士尼</li><br>
-            <li>香港迪士尼</li>
-          </ul>
+            <ul>
+                <br><br>
+                <li id="tokyo">東京迪士尼</li><br>
+                <li id="paris">巴黎迪士尼</li><br>
+                <li id="hongkong">香港迪士尼</li>
+            </ul>
         </div>
         <div class="col-9">
-            <h2 style="text-align: center;">東京迪士尼</h2>
-            <img src="tkoyo.jpeg">
-            <section id="sec01">
-               <ul style="list-style-type: square">
-                    <li>介紹</li>
-                </ul>
-                <ul style="list-style-type: disc">
-                    <li><blockquote>位於日本千葉縣浦安市的一個迪士尼樂園，
-                        東京迪士尼度假區於1983年開園，目前擁有「東京迪士尼陸地」和「東京迪士尼海洋」兩個園區。</blockquote></li>
-                </ul>
-            </section>
-            <section id="sec02">
-                <ul style="list-style-type: square">
-                    <li>推薦設施</li>
-                </ul>
-                <ul style="list-style-type: disc">
-                    <li><blockquote>動物天地-飛濺山</blockquote></li>
-                    <li><blockquote>西部樂園-巨雷山</blockquote></li>
-                    <li><blockquote>明日樂園-太空山</blockquote></li>
-                    <li><blockquote>夢幻樂園-小熊維尼獵蜜記</blockquote></li>
-                    <li><blockquote>明日樂園-怪獸電力公司「迷藏巡遊車」</blockquote></li>
-                </ul>
-            </section>
+            <div id="content-tokyo" class="content-section" style="display: block;">
+                <h2 style="text-align: center;">東京迪士尼</h2>
+                <img src="tkoyo.jpeg"  width="auto" height="auto">
+                <section id="sec01">
+                    <ul style="list-style-type: square">
+                        <li>介紹</li>
+                    </ul>
+                    <ul style="list-style-type: disc">
+                        <li>
+                            <blockquote>位於日本千葉縣浦安市的一個迪士尼樂園，東京迪士尼度假區於1983年開園，目前擁有「東京迪士尼陸地」和「東京迪士尼海洋」兩個園區。</blockquote>
+                        </li>
+                    </ul>
+                </section>
+                <section id="sec3">
+                    <ul style="list-style-type: square">
+                        <li>特色</li>
+                    </ul>
+                    <ul style="list-style-type: disc">
+                        <li>
+                            <blockquote>首座以海洋為主題的樂園🏝️</blockquote>
+                        </li>
+                    </ul>
+                </section>
+                <section id="sec02">
+                    <ul style="list-style-type: square">
+                        <li>推薦設施</li>
+                    </ul>
+                    <ul style="list-style-type: disc">
+                        <li><blockquote>動物天地-飛濺山</blockquote></li>
+                        <li><blockquote>西部樂園-巨雷山</blockquote></li>
+                        <li><blockquote>明日樂園-太空山</blockquote></li>
+                        <li><blockquote>夢幻樂園-小熊維尼獵蜜記</blockquote></li>
+                        <li><blockquote>明日樂園-怪獸電力公司「迷藏巡遊車」</blockquote></li>
+                    </ul>
+                </section>
+            </div>
+            <div id="content-paris" class="content-section">
+                <h2 style="text-align: center;">巴黎迪士尼</h2>
+                <img src="paris.jpeg"  width="200" height="200">
+                <section id="sec01">
+                    <ul style="list-style-type: square">
+                        <li>介紹</li>
+                    </ul>
+                    <ul style="list-style-type: disc">
+                        <li>
+                            <blockquote>位於歐洲的唯一迪士尼度假區是「巴黎迪士尼樂園」。於1992年在法國巴黎郊區開園，
+                                擁有「迪士尼樂園」和「華特迪士尼影城」兩個園區。這裡融合了歐洲各地的文化和建築風格，
+                                使遊客能夠像在歐洲旅遊一樣，享受不同的景觀和體驗。</blockquote>
+                        </li>
+                    </ul>
+                </section>
+                <section id="sec02">
+                    <ul style="list-style-type: square">
+                        <li>推薦設施</li>
+                    </ul>
+                    <ul style="list-style-type: disc">
+                        <li><blockquote>印第安納瓊斯</blockquote></li>
+                        <li><blockquote>星際冒險</blockquote></li>
+                        <li><blockquote>好萊塢塔</blockquote></li>
+                        <li><blockquote>料理鼠王</blockquote></li>
+                        <li><blockquote>電影幕後列車</blockquote></li>
+                        <li><blockquote>U型賽道</blockquote></li>
+                    </ul>
+                </section>
+            </div>
+            <div id="content-hongkong" class="content-section">
+                <h2 style="text-align: center;">香港迪士尼</h2>
+                <img src="hongkong.jpeg" width="auto" height="auto">
+                <section id="sec01" >
+                    <ul style="list-style-type: square">
+                        <li>介紹</li>
+                    </ul>
+                    <ul style="list-style-type: disc">
+                        <li>
+                            <blockquote>位於香港大嶼山的一個迪士尼樂園，香港迪士尼度假區於2005年開園，目前擁有「香港迪士尼樂園」和「迪士尼探索家度假酒店」兩個園區。</blockquote>
+                        </li>
+                    </ul>
+                </section>
+                <section id="sec02">
+                    <ul style="list-style-type: square">
+                        <li>推薦設施</li>
+                    </ul>
+                    <ul style="list-style-type: disc">
+                        <li><blockquote>森林河流之旅</blockquote></li>
+                        <li><blockquote>小熊維尼歷險之旅</blockquote></li>
+                        <li><blockquote>米奇幻想曲</blockquote></li>
+                        <li><blockquote>星戰極速穿梭</blockquote></li>
+                    </ul>
+                </section>
+            </div>
         </div>
+    </div>
+    <script>
+        document.getElementById("tokyo").onclick = function() {
+            showContent("content-tokyo");
+        };
+        document.getElementById("paris").onclick = function() {
+            showContent("content-paris");
+        };
+        document.getElementById("hongkong").onclick = function() {
+            showContent("content-hongkong");
+        };
 
-
+        function showContent(id) {
+            var sections = document.getElementsByClassName("content-section");
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
 </body>
 </html>
